@@ -1,0 +1,116 @@
+.calculator-history {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: rgba(15, 23, 42, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(51, 65, 85, 0.9) rgba(15, 23, 42, 0.7);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.history-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #e2e8f0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.history-clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #38bdf8;
+  opacity: 0.9;
+  font-size: 0.85rem;
+  transition: all 0.15s;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.history-clear:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.history-empty {
+  text-align: center;
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.history-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.history-item {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: rgba(51, 65, 85, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  outline: none;
+}
+
+.history-item:hover,
+.history-item:focus {
+  transform: translateY(-2px);
+  background: rgba(51, 65, 85, 0.8);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-item:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-expression {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  color: #e2e8f0;
+  margin-bottom: 0.3rem;
+}
+
+.history-result {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+/* Custom scrollbar */
+.calculator-history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.calculator-history::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.calculator-history::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.9);
+  border-radius: 3px;
+}
+
+.calculator-history::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 85, 105, 0.9);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .calculator-history {
+    flex: 1;
+    max-height: unset;
+  }
+}

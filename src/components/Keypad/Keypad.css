@@ -1,0 +1,33 @@
+.calculator-keypad {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+@media (max-width: 480px) {
+  .calculator-keypad {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calculator-grid {
+    flex: 1;
+    display: grid;
+  }
+}

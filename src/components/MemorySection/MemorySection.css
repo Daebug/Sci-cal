@@ -1,0 +1,68 @@
+.memory-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.memory-button {
+  padding: 0.6rem 0.3rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.15s;
+  background: rgba(51, 65, 85, 0.8);
+  color: #e2e8f0;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.memory-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.4rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.memory-button:hover:after {
+  opacity: 1;
+}
+
+.memory-button:active:after {
+  opacity: 0;
+}
+
+.memory-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.memory-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mode-toggle {
+  background: rgba(56, 189, 248, 0.2) !important;
+  color: #38bdf8 !important;
+  font-weight: 600;
+}
+
+.mode-toggle:hover {
+  background: rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .memory-buttons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
