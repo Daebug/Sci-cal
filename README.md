@@ -5,12 +5,14 @@ A modern, feature-rich scientific calculator built with React and Vite. This cal
 ## Features
 
 ### Core Functionality
+
 - **Basic Operations**: Addition, subtraction, multiplication, division, modulo
 - **Scientific Functions**: Trigonometric functions (sin, cos, tan), logarithms (log, ln), square root
 - **Power Operations**: Exponentiation with ^ operator
 - **Mathematical Constants**: π (pi) and e (Euler's number)
 
 ### Advanced Features
+
 - **Angle Modes**: Switch between degrees and radians for trigonometric calculations
 - **Memory Operations**: MC (clear), MR (recall), M+ (add), M- (subtract)
 - **Calculation History**: View and recall previous calculations
@@ -18,6 +20,7 @@ A modern, feature-rich scientific calculator built with React and Vite. This cal
 - **Error Handling**: Comprehensive error detection and user-friendly notifications
 
 ### User Interface
+
 - Clean, modern design with responsive layout
 - Real-time display of input expressions and results
 - Visual indicators for current mode (degrees/radians)
@@ -59,6 +62,7 @@ src/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (version compatible with React 19)
 - npm or yarn package manager
 
@@ -73,6 +77,7 @@ src/
 ### Development
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -80,11 +85,13 @@ npm run dev
 ### Building for Production
 
 Build the project:
+
 ```bash
 npm run build
 ```
 
 Preview the production build:
+
 ```bash
 npm run preview
 ```
@@ -92,6 +99,7 @@ npm run preview
 ### Code Quality
 
 Run ESLint to check code quality:
+
 ```bash
 npm run lint
 ```
@@ -99,28 +107,33 @@ npm run lint
 ## Usage
 
 ### Basic Operations
+
 - Click number buttons or use keyboard to input numbers
-- Use +, -, *, /, % for basic arithmetic operations
+- Use +, -, \*, /, % for basic arithmetic operations
 - Press = or Enter to calculate results
 
 ### Scientific Functions
+
 - Use function buttons like sin, cos, tan, log, ln, sqrt
 - Functions require parentheses: sin(30) or log(100)
 - Switch between degrees and radians using the DEG/RAD toggle
 
 ### Memory Operations
+
 - **MC**: Clear memory
 - **MR**: Recall value from memory
 - **M+**: Add current result to memory
 - **M-**: Subtract current result from memory
 
 ### Keyboard Shortcuts
+
 - **Enter**: Calculate result
 - **Escape**: Clear input
 - **Backspace**: Delete last character
 - **Numbers and operators**: Direct input
 
 ### History
+
 - View up to 20 previous calculations
 - Click any history item to recall it
 - Clear history with the clear button
@@ -128,6 +141,7 @@ npm run lint
 ## Expression Parser
 
 The calculator uses a sophisticated expression parser that:
+
 - Implements the shunting yard algorithm for proper operator precedence
 - Handles nested parentheses and function calls
 - Supports mathematical constants (π, e)
@@ -137,6 +151,7 @@ The calculator uses a sophisticated expression parser that:
 ## Error Handling
 
 The calculator includes comprehensive error handling for:
+
 - Division by zero
 - Invalid function arguments (e.g., negative square roots)
 - Malformed expressions
@@ -146,7 +161,3 @@ The calculator includes comprehensive error handling for:
 ## Browser Support
 
 This calculator is built with modern web technologies and supports all modern browsers that support ES6+ features and React 19.
-
-## License
-
-This project is private and not licensed for public use.
